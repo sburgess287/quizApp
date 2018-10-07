@@ -1,0 +1,49 @@
+body {
+    background: #C1E1ED;
+}
+
+main {
+    background: #C1E1ED;;
+    background-position: center top;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    background: #FFA891;
+    padding: 20px;
+    border: 2px solid #273D3B;
+}
+
+.css-container {
+    text-align: center;
+    padding: 40px;
+    border: 2px solid #273D3B;
+    background: #76C7C6;
+    min-height: 500px;
+}
+
+h2 {
+    text-align: center;
+    background: #C1E1ED;
+    padding: 20px;
+    border: 2px solid #273D3B;
+}
+
+.button-class1 {
+    width: 25%;
+    background: #FFF3EC;
+}
+
+.button-class2 {
+    background: #FFF3EC;
+}
+
+footer {
+    background: #A5C77F;
+    border: 2px solid #273D3B;
+    padding: 10px;
+}
+
