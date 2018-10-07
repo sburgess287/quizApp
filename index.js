@@ -193,7 +193,7 @@ function generateQuestionPage(questionObject, score, questionNumber) {
         </div>
         <form class="row questionForm" id="js-questions-form">
             <fieldset class="col-6">
-                <h2 class="js-item-index-element">${questionObject.question}</h2>
+                <legend class="js-item-index-element">${questionObject.question}</legend>
                 <!-- legend element tells screenreaders to read question and associates the answers with the question-->
                 <!-- Radio buttons with answers appear on 2nd page through end of questions. 
                 User can click then click enter button below. The correct answer will highlight a box around the text, along 
