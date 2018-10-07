@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Greatest Artists Of All Time Quiz</title>
+    <meta name="description" content="Entry page to the Greatest Artists of all Time Quiz, which asks questions about famous artists">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+    <link href="float-grid.css" rel="stylesheet"/>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    
+    
+    
+</head>
+
+<body>
+<main role="main">
+    <header role="banner" class="row">
+        
+        <div class="col-12 col-6">
+            <!-- The header shows on every page of the app -->
+            <h1>Greatest Artists of All Time Quiz</h1>    
+        </div>       
+    </header>
+    <!-- aria-live="polite": tell screenreader to reread it, and look it up and add an aria to the contentContainer -->
+    
+    <div class="contentContainer row" aria-live="polite">
+    </div>
+     
+    
+    <section role="region" class="welcomePage row"> 
+        <!-- Page 1 --> 
+        <p class="welcomeMessage">Come and test your knowledge of 
+                some of the greatests artists of all time!  Through their imagination and 
+                        skill, they have shaped our view of the world. How much do you know? 
+        </p>
+        <p class="instructions">
+            Read each question, then select 1 answer to the choices provided. Click Enter Answer. 
+        </p> 
+        <!-- Begin quiz button is only on the welcomePage-->
+         <button class="beginQuiz" aria-label="Begin Quiz">Click to Begin Quiz</button>
+    </section> 
+    
+    <!-- Page 2 : Question Page -->
+    <section role="region" class="questionPage row">
+        <div class="col-6">
+            <!-- This shows on 2nd page of the app starting at 0 of 0. 
+                First number increments with correct answers, second with the question number-->
+            <p class="ongoingScore">Your score: 0 correct of 0</p>
+        </div>
+        <form class="row questionForm" id="js-questions-form">
+            <fieldset class="col-6">
+                <h2 class="quizQuestion"></h2>
+                <!-- legend element tells screenreaders to read question and associates the answers with the question-->
+                <!-- Radio buttons with answers appear on 2nd page through end of questions. 
+                User can click then click enter button below. The correct answer will highlight a box around the text, along 
+                with text confirmation below. -->
+                <input type="radio" id="firstAnswer" name="answer">
+                <label for="firstAnswer">blue</label>
+                <input type="radio" id="secondAnswer" name="answer">
+                <label for="secondAnswer">green</label>
+                <input type="radio" id="thirdAnswer" name="answer">
+                <label for="thirdAnswer">red</label>
+                <input type="radio" id="fourthAnswer" name="answer">
+                <label for="fourthAnswer">purple</label>
+                <!-- Show on the second page when the questions begin -->
+                <button aria-label="submit" type="submit" class= "enterAnswer">Enter Answer</button>
+            </fieldset>
+        </form>
+       
+        <div class="col-6">
+            <!-- This keeps track of which question the user is answering. Last page will say "You have answered all questions!" -->
+            <p class="questionNumber">You are on question 1 of 10. 
+            </p>
+        </div>
+    </section>
+
+     <!-- Page 3: Answer Page -->
+    <section class="answerPage row">
+        <div class="col-6">
+            <h2 class="answerStatus">Your answer is correct or incorrect
+            </h2>
+                <p class="correctAnswer">The correct answer is ...
+                </p>   
+        </div>
+        <div class="col-6">
+            <button aria-label="Next question" class="nextQuestion">Click to Go to Next Question</button>
+        </div>
+    </section>
+
+     <!-- Page 4: Final Message Page-->
+    <section class="endingPage row">
+        <div class="col-6">
+            <h2 class="finalMessage">Congratulations, you have completed the quiz! Thank you for playing.
+            </h2>
+            <p class="finalScore">Your score: 10 correct out of 10</p>
+        </div>
+        <div class="col-6">
+            <!-- Reset quiz button only shows on the final page -->
+            <button type="reset" class="restartQuiz">Click to Start Quiz Over</button>
+        </div>
+    </section>
+    
+    <footer role="contentinfo" class="row">
+        <p>Written by Sarah Burgess</p>
+    </footer>
+</main>
+
+   
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+</body>
+</html>
