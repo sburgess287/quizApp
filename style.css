@@ -25,7 +25,7 @@ h1 {
     min-height: 500px;
 }
 
-h2 {
+h2, legend {
     text-align: center;
     background: #C1E1ED;
     padding: 20px;

@@ -19,21 +19,23 @@
 </head>
 
 <body>
-    <header role="banner" class="row">
+    <!--The HTML5 header element defines a banner landmark when its context is the body element.-->
+    <header class="row">
         <div class="col-12">
             <!-- The header shows on every page of the app -->
             <h1>Greatest Artists of All Time Quiz</h1>    
         </div>       
     </header>
-<main role="main">
-
+<main>
+<!--Use the HTML5 main element to define a main landmark (role="main" not needed)-->
     <!-- aria-live="polite": tell screenreader to reread it, and look it up and add an aria to the contentContainer -->
     <div class="contentContainer css-container" aria-live="polite">
     </div>
     
     
 </main>
-        <footer role="contentinfo" class="row">
+        <footer class="row">
+        <!--The HTML5 footer element defines a contentinfo landmark when its context is the body element.-->
             <p>Written by Sarah Burgess</p>
         </footer>
     <script type="text/javascript" src="index.js"></script>

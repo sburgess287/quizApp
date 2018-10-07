@@ -153,8 +153,10 @@ const progress = {
 
 function generateNewPageString(){
     // Passes the string of the welcome page into showWelcomePage();
+    // Using the <section> element will automatically communicate a section has a 
+    //role of region if it is given an accessible name. 
     return `
-    <section role="region" class="welcomePage row"> 
+    <section class="welcomePage row"> 
         <!-- Page 1 --> 
         <h2 class="welcomeMessage">Come and test your knowledge of 
         some of the greatests artists of all time! Through their imagination and 
@@ -183,7 +185,7 @@ function generateQuestionPage(questionObject, score, questionNumber) {
 
     // Dynamically generates questions, answers, score and question number from the object!!
     return `
-    <section role="region" class="questionPage row">
+    <section class="questionPage row">
         <div class="col-6">
         <!-- This shows on 2nd page of the app starting at 0 of 0. 
                 First number increments with correct answers, second with the question number-->
