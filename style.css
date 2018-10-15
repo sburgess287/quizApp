@@ -27,6 +27,10 @@ h1 {
     margin:auto;
 }
 
+.cssCenter{
+    margin:auto;
+
+}
 
 h2, legend {
     text-align: center;

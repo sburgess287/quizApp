@@ -192,24 +192,25 @@ function generateQuestionPage(questionObject, score, questionNumber) {
             <p class="ongoingScore">Your score: ${score} correct of 10</p>
         </div>
         <form class="row questionForm" id="js-questions-form">
-            <fieldset class="col-6">
-                <legend class="js-item-index-element">${questionObject.question}</legend>
+            <div class="col-6 cssCenter">
+                <h2 id="question" class="js-item-index-element">${questionObject.question}</h2>
                 <!-- legend element tells screenreaders to read question and associates the answers with the question-->
                 <!-- Radio buttons with answers appear on 2nd page through end of questions. 
                 User can click then click enter button below. The correct answer will highlight a box around the text, along 
                 with text confirmation below. -->
 
-                <input type="radio" id="firstAnswer" name="answer" value="a" required>
+                <input aria-labelledby="question" type="radio" id="firstAnswer" name="answer" value="a" required>
                 <label for="firstAnswer">${questionObject.answers.a}</label>
-                <input type="radio" id="secondAnswer" name="answer" value="b">
+                <input aria-labelledby="question" type="radio" id="secondAnswer" name="answer" value="b">
                 <label for="secondAnswer">${questionObject.answers.b}</label>
-                <input type="radio" id="thirdAnswer" name="answer" value="c">
+                <input aria-labelledby="question" type="radio" id="thirdAnswer" name="answer" value="c">
                 <label for="thirdAnswer">${questionObject.answers.c}</label>
-                <input type="radio" id="fourthAnswer" name="answer" value="d">
+                <input aria-labelledby="question" type="radio" id="fourthAnswer" name="answer" value="d">
                 <label for="fourthAnswer">${questionObject.answers.d}</label>
-                <!-- Show on the second page when the questions begin -->
-                <button aria-label="submit" type="submit" class= "enterAnswer button-class2">Enter Answer</button>
-            </fieldset>
+               
+            </div>
+            <!-- Show on the second page when the questions begin -->
+            <button aria-label="submit" type="submit" class= "enterAnswer button-class2">Enter Answer</button>
         </form>
         <div class="col-6">
             <!-- This keeps track of which question the user is answering. Last page will say "You have answered all questions!" -->
